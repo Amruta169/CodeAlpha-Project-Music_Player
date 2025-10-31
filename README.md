@@ -16,7 +16,7 @@ It allows users to easily play, pause, skip, and shuffle songs through an elegan
 
 ## 🚀 How to Run
 - Clone this repository:
-- git clone https://github.com/your-username/music-player.git
+- git clone (https://github.com/Amruta169/CodeAlpha-Project-Music_Player.git)
 - Open the project folder.
 - Run the index.html file in your browser.
 - Enjoy your favorite music! 🎧
