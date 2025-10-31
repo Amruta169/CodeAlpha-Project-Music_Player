@@ -28,9 +28,8 @@ It allows users to easily play, pause, skip, and shuffle songs through an elegan
 <img width="1919" height="1020" alt="Screenshot 2025-10-31 224715" src="https://github.com/user-attachments/assets/a3b0c7e7-4cfe-4390-abb3-55c50d6ea10e" />
 )
 ---
-## 🎥 Demo Video
-https://www.linkedin.com/posts/amrutapatil21_codealpha-webdevelopment-html-activity-7390082908612513792-1TIb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIC3qQBl9ygxQ1rrtTr4txQiPo91J3Gp4Y
-
+## 🌐 Live Demo
+[View on GitHub Pages](https://www.linkedin.com/posts/amrutapatil21_codealpha-webdevelopment-html-activity-7390082908612513792-1TIb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEIC3qQBl9ygxQ1rrtTr4txQiPo91J3Gp4Y)
 ---
 ## 💡 Future Enhancements
 - Add playlist support
