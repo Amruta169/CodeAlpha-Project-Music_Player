@@ -30,6 +30,7 @@ It allows users to easily play, pause, skip, and shuffle songs through an elegan
 ---
 ## 🎥 Demo Video
 
+
 ---
 ## 💡 Future Enhancements
 - Add playlist support
