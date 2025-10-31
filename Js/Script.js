@@ -47,27 +47,71 @@ function pauseMusic(){
 }
 
 // prev music function
-function prevMusic(){
-    // decrement index by 1
-    musicIndex--;
-    // if musicindex less than array length then musicindex will be 1 so the first music is play
-    musicIndex < 1 ? musicIndex = allMusic.length:musicIndex=musicIndex;
-    loadMusic(musicIndex); 
+// function prevMusic(){
+//     // decrement index by 1
+//     musicIndex--;
+//     // if musicindex less than array length then musicindex will be 1 so the first music is play
+//     musicIndex < 1 ? musicIndex = allMusic.length:musicIndex=musicIndex;
+//     loadMusic(musicIndex); 
+//     PlayMusic();
+//     playingNow();
+
+// }
+function prevMusic() {
+    let getText = repeatBtn.innerText;
+
+    if (getText === "shuffle") {
+        let randIndex;
+        do {
+            randIndex = Math.floor((Math.random() * allMusic.length) + 1);
+        } while (musicIndex == randIndex);
+        musicIndex = randIndex;
+    } else {
+        musicIndex--;
+        if (musicIndex < 1) {
+            musicIndex = allMusic.length;
+        }
+    }
+
+    loadMusic(musicIndex);
     PlayMusic();
     playingNow();
-
 }
+
 
 // next music function
-function nextMusic(){
-    // increment index by 1
-    musicIndex++;
-    // if  musicIndex is grater than array length then musicindex will be 1 so the first music is play
-    musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex ;
-    loadMusic(musicIndex); 
+// function nextMusic(){
+//     // increment index by 1
+//     musicIndex++;
+//     // if  musicIndex is grater than array length then musicindex will be 1 so the first music is play
+//     musicIndex > allMusic.length ? musicIndex = 1 : musicIndex = musicIndex ;
+//     loadMusic(musicIndex); 
+//     PlayMusic();
+//     playingNow();
+// }
+function nextMusic() {
+    let getText = repeatBtn.innerText; // get current mode icon text
+
+    if (getText === "shuffle") {
+        // Generate random index different from current
+        let randIndex;
+        do {
+            randIndex = Math.floor((Math.random() * allMusic.length) + 1);
+        } while (musicIndex == randIndex);
+        musicIndex = randIndex;
+    } else {
+        // Normal next
+        musicIndex++;
+        if (musicIndex > allMusic.length) {
+            musicIndex = 1;
+        }
+    }
+
+    loadMusic(musicIndex);
     PlayMusic();
     playingNow();
 }
+
 
 // Play and music Event button
 playPauseBtn.addEventListener("click",()=>{
@@ -176,7 +220,7 @@ mainAudio.addEventListener("ended",()=>{
             musicIndex = randIndex; //yhis loop run until next random number wonts to be 
             loadMusic(musicIndex); //passing randomindex to musicIndex
             PlayMusic(); //calling play music function
-             playingNow();
+            playingNow();
             break;
     }
 });
