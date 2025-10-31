@@ -24,6 +24,10 @@ It allows users to easily play, pause, skip, and shuffle songs through an elegan
 ## 📸 Preview
 ()
 
+## 🎥 Demo Video
+
+
+
 ## 💡 Future Enhancements
 - Add playlist support
 - Integrate volume control and progress seeking
