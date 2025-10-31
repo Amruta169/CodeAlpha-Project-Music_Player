@@ -3,7 +3,7 @@ This project is a simple and responsive Music Player web application built using
 It allows users to easily play, pause, skip, and shuffle songs through an elegant and user-friendly interface.
 
 ## 🔑 Features
-🎶 Play / Pause / Next / Previous song controls
+-- 🎶 Play / Pause / Next / Previous song controls
 🔁 Shuffle and Repeat functionality
 🖼️ Displays song title, artist name, and album cover
 ⏱️ Real-time progress bar and duration indicator
